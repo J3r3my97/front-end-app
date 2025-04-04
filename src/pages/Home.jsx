@@ -15,10 +15,24 @@ const Home = () => {
                 </Link>
             </div>
 
-            <div className="features-section">
+            <div className="features-section" style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100%',
+                padding: '2rem 0'
+            }}>
                 <h2>Features</h2>
 
-                <div className="feature-cards">
+                <div className="feature-cards" style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    gap: '2rem',
+                    maxWidth: '1200px',
+                    margin: '0 auto'
+                }}>
                     <div className="feature-card">
                         <div className="feature-icon">🤖</div>
                         <h3>Multiple AI Models</h3>
