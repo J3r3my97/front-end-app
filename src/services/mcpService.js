@@ -100,4 +100,5 @@ class MCPService {
     }
 }
 
-export default new MCPService();
+const mcpService = new MCPService();
+export default mcpService;

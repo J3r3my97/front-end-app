@@ -5,7 +5,7 @@ import ComparisonView from '../components/ComparisonView';
 import ContentForm from '../components/ContentForm';
 import mcpService from '../services/mcpService';
 
-const Comparison = () => {
+function Comparison() {
     const [originalContent, setOriginalContent] = useState(null);
     const [comparisonContent, setComparisonContent] = useState(null);
     const [loadingState, setLoadingState] = useState('idle');
@@ -78,4 +78,15 @@ const Comparison = () => {
             console.error(err);
         }
     }
+
+    return (
+        <div className="comparison-page">
+            <h1>Model Comparison</h1>
+            <div className="comparison-content">
+                <p>Compare different AI models here</p>
+            </div>
+        </div>
+    );
 }
+
+export default Comparison;
